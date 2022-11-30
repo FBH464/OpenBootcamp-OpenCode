@@ -7,7 +7,61 @@
     <title>Wishlist</title>
 </head>
 <body>
-    <h1>Lista de regalos</h1>
-    <h3>plantas carnívoras - regalos vivos</h3>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <img src="img/logo.jpg" id="logo" width="190" height="140">
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.svg" id="img-carrito" height="40">
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="lista-regalos">
+        <h1 id="encabezado">Lista de regalos</h1>
+        <h3>plantas carnívoras - regalos vivos</h3>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="Wishlist/img/dionaea muscipula.jpg" class="imagen-regalo">
+                    <h4>Planta Dionaea Muscipula</h4>
+                    <p>Planta carnívora....</p>
+                    <p class="precio">$15</p>
+                    <a href="#" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="Wishlist/img/dionaea muscipula.jpg" class="imagen-regalo">
+                    <h4>Planta Dionaea Muscipula</h4>
+                    <p>Planta carnívora....</p>
+                    <p class="precio">$15</p>
+                    <a href="#" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 </body>
 </html>
