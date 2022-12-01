@@ -11,19 +11,20 @@
     <!-- Tipografía -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Space Grotesk'>
-
 </head>
 <body>
     <header id="header">
         <div class="container">
             <div class="row">
-                <img src="img/logo.jpg" id="logo" width="190" height="140">
+                <div class="four columns">
+                    <img src="img/logo.jpg" id="logo" width="190" height="140" style="border-radius: 0%;">
+                </div>
                 <div class="two columns u-pull-right">
                     <ul>
                         <li class="submenu">
-                            <img src="img/cart.svg" id="img-carrito" height="40">
+                            <img src="img/cart.svg" id="img-carrito" height="40" style="border-radius: 0%;">
                             <div id="carrito">
-                                <table id="lista-carrito">
+                                <table id="lista-carrito" class="u-full-width">
                                     <tr>
                                         <th>Imagen</th>
                                         <th>Nombre</th>
@@ -33,7 +34,7 @@
                                     </tr>
                                 </table>
 
-                                <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                                <a href="#" id="vaciar-carrito" class="buttom u-full-width">Vaciar Carrito</a>
 
                             </div>
                         </li>
@@ -45,6 +46,7 @@
     
     <div class="barra">
         <div class="container">
+            <img src="img/gift.svg" alt="" width="50">
             <p>Ofertas en regalos hasta el 50% <br>
             Ven y disfruta de esta promoción!...</p>
         </div>
@@ -57,12 +59,13 @@
         <div class="row">
             <div class="four columns">
                 <div class="card">
-                    <img src="img/dionaea muscipula.jpg" class="imagen-regalo u-full-width">
+                    <img src="img/dionaea muscipula.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>Planta Dionaea Muscipula</h4>
-                        <p>Planta carnívora....</p>
-                        <p class="precio">$15<span class="u-pull-right">$8,99</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <p>Planta carnívora...</p>
+                        <p class="precio">$15 <span class="u-pull-right">$8,99</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                        data-id="1">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
@@ -72,14 +75,50 @@
                     <div class="info-card">
                         <h4>Planta Drosea Aliciae</h4>
                         <p>Planta carnívora....</p>
-                        <p class="precio">$10</p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                        <p class="precio">$10<span class="u-pull-right">$6</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" 
+                        data-id="2">Agregar al carrito</a>
+                    </div>                      
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/drosera regia.jpg" class="imagen-regalo u-full-width">
+                    <div class="info-card">
+                        <h4>Planta Drosera Regia</h4>
+                        <p>Planta carnívora....</p>
+                        <p class="precio">$5 <span class="u-pull-right">$1,89</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" 
+                        data-id="3">Agregar al carrito</a>
                     </div>                      
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/aloe juvenna.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Planta aloe juvenna</h4>
+                        <p>Planta carnívora...</p>
+                        <p class="precio">$15 <span class="u-pull-right">$8</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                        data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     
 
 </body>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        <p>Hecho para OpenBootcamp</p>
+    </div>
+</footer>
+
 </html>
