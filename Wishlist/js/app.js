@@ -10,6 +10,11 @@ function cargarEventListeners() {
 
     carrito.addEventListener('click', elimnarRegalo);
 
+    vaciarCarritoBtn.addEventListener('click', ()=> {
+        articulosCarrito = [];
+        limpiarHTML();
+    })
+
 }
 
 function agregarRegalo(e) {
