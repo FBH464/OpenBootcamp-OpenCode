@@ -8,10 +8,25 @@ form.addEventListener('submit', function(event) {
 
     // Obtener el valor de la tarea del input
     const listaProposito = form.elements.proposito.value;
-    // Agregar el elemento li a la lista de tareas
+    // Agregar los elementos a la lista de tareas
     const li = document.createElement("li");
-    li.textContent = listaProposito;
+    const btn = document.createElement("button");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
+    // Botón borrar elemento de la lista
+    btn.textContent = "Borrar";
+    btn.addEventListener("click", function() {
+        li.remove();
+    });
+
+    // Agregar el propósito a la lista 
+    li.appendChild(checkbox);
+    li.appendChild(document.createTextNode(listaProposito));
+    li.appendChild(btn);
     list.appendChild(li);
+
+    
     
     // Guardar la tarea en localStorage
     localStorage.setItem("proposito", JSON.stringify(savedTasks));
@@ -26,6 +41,9 @@ form.addEventListener('submit', function(event) {
 const savedTasks = JSON.parse(localStorage.getItem("proposito")) || [];
 for (const listaProposito of savedTasks) {
     const li = document.createElement("li");
-    li.textContent = listaProposito;
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    li.appendChild(checkbox);
+    li.appendChild(document.createTextNode(listaProposito));
     list.appendChild(li);
 }
