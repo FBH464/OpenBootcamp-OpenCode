@@ -24,7 +24,6 @@ function cargarEventListeners() {
         articulosCarrito = [];
         limpiarHTML();
     })
-
 }
 
 function agregarRegalo(e) {
