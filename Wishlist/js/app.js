@@ -3,12 +3,27 @@ const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const listaRegalos = document.querySelector('#lista-regalos');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 var articulosCarrito = []
+const generarLista = document.querySelector('#generar-lista');
+
+var data = listaRegalos.rows[0].innerHTML;
+var carritotbody = document.querySelector("#menucarrito");
+
+// Creamos una nueva fila en la página de destino y le asignamos los datos copiados
+var newRow = carritotbody.insertRow();
+newRow.innerHTML = data;
 
 cargarEventListeners();
 function cargarEventListeners() {
     listaRegalos.addEventListener('click', agregarRegalo);
 
     carrito.addEventListener('click', elimnarRegalo);
+
+    generarLista.addEventListener('click', carritoHTML);
+
+    vaciarCarritoBtn.addEventListener('click', ()=> {
+        articulosCarrito = [];
+        limpiarHTML();
+    })
 
 }
 

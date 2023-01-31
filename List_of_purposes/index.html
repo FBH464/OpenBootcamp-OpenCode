@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Formulario Lista -->
+    <form id="form-list" class="form-list">
+      <h1>Lista de propósitos 2023</h1>
+      <label for="proposito">Agregar un propósito:</label>
+      <input type="text" id="proposito" name="proposito" placeholder="Mi nuevo propósito..." required oninvalid="this.setCustomValidity('El campo propósito no puede estar vacío')"
+      oninput="setCustomValidity('')" />
+      <button type="submit" value="Agregar" onclick="addEventListener()">Submit</button>
+    </form>
+
+    <!-- Contenido lista -->
+    <div class="lista-content">
+      <h3>Lista de tareas</h3>
+      <ul id="list" class="list">
+        <!-- Propósitos que se agregarán aquí -->
+      </ul>
+    </div>
+    
+    <script src="js/custom.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Tipografía -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Space Grotesk'>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="../img/logo.jpg" id="logo" width="190" height="140" style="border-radius: 0%;">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="../img/cart.svg" id="img-carrito" height="40" style="border-radius: 0%;">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito" class="buttom u-full-width">Vaciar Carrito</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div id="lista-cesta">
+            <h1>Lista de cesta</h1>
+            <h3>Items añadidos a la cesta:</h3>
+            <button id="generar-lista">Click!</button>
+
+            <div class="row">
+                <div class="two columns">
+                    <div class="card">
+                        <img src="" alt="">
+                        <h4>Planta...</h4>
+                        <p>precio $4</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<footer id="footer" class="footer">
+    <div class="container">
+        <p>Hecho para OpenBootcamp</p>
+    </div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script src="../js/cart.js"></script>
+
+</html>
